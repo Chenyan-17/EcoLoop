@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRefill | Sustainable Zero-Waste Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* 符合 WCAG 高对比度要求  */
+        :root {
+            --primary-green: #166534;
+            --accent-gold: #facc15;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900 font-sans">
+
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center" aria-label="Main Navigation">
+            <div class="text-2xl font-bold text-green-800">EcoRefill</div>
+            <ul class="hidden md:flex space-x-8 font-medium">
+                <li><a href="index.html" class="text-green-700 hover:text-green-500">Home</a></li>
+                <li><a href="map.html" class="hover:text-green-500">Find Stores</a></li>
+                <li><a href="profile.html" class="hover:text-green-500">My Impact</a></li>
+            </ul>
+            <a href="login.html" class="bg-green-700 text-white px-6 py-2 rounded-full hover:bg-green-800 transition">Login</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container mx-auto px-6 py-16 text-center lg:text-left lg:flex items-center">
+            <div class="lg:w-1/2">
+                <h1 class="text-4xl lg:text-6xl font-extrabold leading-tight mb-6 text-gray-900">
+                    Your Digital Gateway to <span class="text-green-700">Zero-Waste</span> Living.
+                </h1>
+                <p class="text-lg text-gray-600 mb-8 max-w-lg">
+                    Build a sustainable future by reusing resources. Join our platform to find refill stations near you and track your plastic-saving achievements.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="map.html" class="bg-green-700 text-white text-center px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition">Start Refilling Now</a>
+                    <a href="#impact" class="border-2 border-green-700 text-green-700 text-center px-8 py-4 rounded-lg font-bold text-lg hover:bg-green-50">View Global Impact</a>
+                </div>
+            </div>
+            <div class="lg:w-1/2 mt-12 lg:mt-0">
+                <img src="https://images.unsplash.com/photo-1605600611284-195205ef9012?auto=format&fit=crop&q=80&w=800" 
+                     alt="Eco-friendly refilling station" 
+                     class="rounded-2xl shadow-2xl">
+            </div>
+        </section>
+
+        <section id="features" class="bg-white py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-16">How EcoRefill Works</h2>
+                <div class="grid md:grid-cols-3 gap-12 text-center">
+                    <div>
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-green-700 text-2xl font-bold">1</div>
+                        <h3 class="text-xl font-bold mb-4">Find Stations</h3>
+                        <p class="text-gray-600 text-sm">Use our integrated Map API to locate the nearest zero-waste stores.</p>
+                    </div>
+                    <div>
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-green-700 text-2xl font-bold">2</div>
+                        <h3 class="text-xl font-bold mb-4">Refill & Save</h3>
+                        <p class="text-gray-600 text-sm">Bring your own containers, scan to pay via Stripe, and cut plastic waste.</p>
+                    </div>
+                    <div>
+                        <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6 text-green-700 text-2xl font-bold">3</div>
+                        <h3 class="text-xl font-bold mb-4">Track Progress</h3>
+                        <p class="text-gray-600 text-sm">Earn Eco-points for every bottle saved and unlock sustainable badges.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6 text-center">
+            <p class="mb-4">&copy; 2026 EcoRefill Project | Aligned with SDG 9</p>
+            <p class="text-gray-500 text-sm">Developed for BIC 31502 Creativity & Innovation</p>
+        </div>
+    </footer>
+
+</body>
+</html>
